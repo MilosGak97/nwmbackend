@@ -38,6 +38,6 @@ mongoose
     /*`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@mongovac.zib5bza.mongodb.net/noworriesmoving?retryWrites=true&w=majority`*/
   )
   .then(() => {
-    app.listen(/*process.env.PORT ||*/ 3000);
+    app.listen(/*process.env.PORT ||*/ 8080);
   })
   .catch((err) => console.log(err));
