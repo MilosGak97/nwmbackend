@@ -34,9 +34,10 @@ app.use('/', (req, res) => {
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@mongovac.zib5bza.mongodb.net/noworriesmoving?retryWrites=true&w=majority`
+    `mongodb+srv://Bojan:BeastForeverN1@mongovac.zib5bza.mongodb.net/noworriesmoving?retryWrites=true&w=majority`
+    /*`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@mongovac.zib5bza.mongodb.net/noworriesmoving?retryWrites=true&w=majority`*/
   )
   .then(() => {
-    app.listen(process.env.PORT || 3000);
+    app.listen(/*process.env.PORT ||*/ 3000);
   })
   .catch((err) => console.log(err));
