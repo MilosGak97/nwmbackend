@@ -29,7 +29,7 @@ app.post('/about-you', handleAboutYou);
 app.post('/contact', handleContact);
 
 app.use('/', (req, res) => {
-  res.send('<h1>Hello, World!</h1>');
+  res.send('<h1>Hello, World2!</h1>');
 });
 
 mongoose
